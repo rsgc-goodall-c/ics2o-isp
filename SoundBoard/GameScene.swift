@@ -13,7 +13,7 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        // Present a basic black background
+        // Present a basic black background  
         self.backgroundColor = SKColor.black
         
     }
