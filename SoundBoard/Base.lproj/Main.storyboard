@@ -21,12 +21,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="7yq-Gf-c34">
-                                <rect key="frame" x="-8" y="-40" width="389" height="745"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sound Board" translatesAutoresizingMaskIntoConstraints="NO" id="OWX-C8-Jdm">
+                                <rect key="frame" x="75" y="28" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sound Board" translatesAutoresizingMaskIntoConstraints="NO" id="kLM-av-bOD">
-                                <rect key="frame" x="77" y="276" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Censor" translatesAutoresizingMaskIntoConstraints="NO" id="iPa-FI-M06">
+                                <rect key="frame" x="144" y="569" width="127" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="180px-Bass_logosvg" translatesAutoresizingMaskIntoConstraints="NO" id="TAh-if-JU5">
+                                <rect key="frame" x="160" y="339" width="90" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -39,7 +43,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="472" height="807"/>
+        <image name="180px-Bass_logosvg" width="180" height="217"/>
+        <image name="Censor" width="891" height="289"/>
         <image name="Sound Board" width="418" height="131"/>
     </resources>
 </document>

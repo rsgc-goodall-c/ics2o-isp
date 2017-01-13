@@ -13,9 +13,56 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
-        // Present a basic black background  
-        self.backgroundColor = SKColor.black
+        let background = SKSpriteNode(imageNamed: "Background")
+        background.position = CGPoint(x: size.width / 2, y: size.height / 2)
+        background.size = self.frame.size
+        background.zPosition = -1
+        addChild(background)
+       
+        // create a sprite / button
+        let bass = SKSpriteNode (imageNamed: "Button")
+        bass.position = CGPoint(x: size.width/2, y: 500)
+        bass.setScale (0.4)
+        addChild(bass)
+        
+        
+        // other button
+        let censor = SKSpriteNode (imageNamed: "PlayButton")
+        censor.position = CGPoint(x: size.width/2, y: 1000)
+        censor.setScale (0.4)
+        addChild(censor)
         
     }
     
+    // detect touch
+ 
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
