@@ -11,6 +11,8 @@ import SpriteKit
 class GameScene: SKScene {
     
     
+    let bass = SKSpriteNode (imageNamed: "Button")
+
     override func didMove(to view: SKView) {
         
         let background = SKSpriteNode(imageNamed: "Background")
@@ -18,9 +20,8 @@ class GameScene: SKScene {
         background.size = self.frame.size
         background.zPosition = -1
         addChild(background)
-       
+        
         // create a sprite / button
-        let bass = SKSpriteNode (imageNamed: "Button")
         bass.position = CGPoint(x: size.width/2, y: 500)
         bass.setScale (0.4)
         addChild(bass)
@@ -35,12 +36,25 @@ class GameScene: SKScene {
     }
     
     // detect touch
- 
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>,
+                               with event: UIEvent?) {
+        
+        guard let touch = touches.first else {
+            return
+        }
+        let touchLocation = touch.location(in: self)
+        
+        // Check for a tap inside the bass
+        if bass.frame.contains(touchLocation) {
+            // Play sound
+            print("tapped the bass")
+        }
+        
+    }
     
 }
-
-
 
 
 
