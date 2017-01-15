@@ -12,7 +12,8 @@ class GameScene: SKScene {
     
     
     let bass = SKSpriteNode (imageNamed: "Button")
-
+    
+    let censor = SKSpriteNode (imageNamed: "PlayButton")
     override func didMove(to view: SKView) {
         
         let background = SKSpriteNode(imageNamed: "Background")
@@ -28,7 +29,7 @@ class GameScene: SKScene {
         
         
         // other button
-        let censor = SKSpriteNode (imageNamed: "PlayButton")
+        
         censor.position = CGPoint(x: size.width/2, y: 1000)
         censor.setScale (0.4)
         addChild(censor)
@@ -51,9 +52,13 @@ class GameScene: SKScene {
             // Play sound
             print("tapped the bass")
         }
-        
+        if censor.frame.contains(touchLocation) {
+            // Play sound
+            print("tapped the censor")
+        }
+
     }
-    
+   
 }
 
 
