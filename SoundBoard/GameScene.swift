@@ -9,8 +9,9 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    
-    
+    // create the variably to hold the sound effect playing function
+    var playSoundAction = SKAction ()
+    var PlaySoundAction2 = SKAction ()
     let bass = SKSpriteNode (imageNamed: "Button")
     
     let censor = SKSpriteNode (imageNamed: "PlayButton")
@@ -33,12 +34,14 @@ class GameScene: SKScene {
         censor.position = CGPoint(x: size.width/2, y: 1000)
         censor.setScale (0.4)
         addChild(censor)
+        //assign action action to play sound on tap of button
+        playSoundAction = SKAction.playSoundFileNamed("censor-beep-10.mp3 ", waitForCompletion: false)
+        
+        // Assign action to play sound on tap of other button
+        playSoundAction = SKAction.playSoundFileNamed("most_annoying_sound_ever-Ethan_Buck-1557665457.wav", waitForCompletion: false)
         
     }
-    
     // detect touch
-    
-    
     override func touchesBegan(_ touches: Set<UITouch>,
                                with event: UIEvent?) {
         
@@ -50,15 +53,15 @@ class GameScene: SKScene {
         // Check for a tap inside the bass
         if bass.frame.contains(touchLocation) {
             // Play sound
-            print("tapped the bass")
+            self.run(PlaySoundAction2)
         }
         if censor.frame.contains(touchLocation) {
             // Play sound
-            print("tapped the censor")
+            self.run(playSoundAction)
         }
-
+        
     }
-   
+    
 }
 
 

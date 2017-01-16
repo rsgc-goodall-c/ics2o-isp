@@ -13,6 +13,8 @@
 		3F716F681E097F04004F8F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F716F661E097F04004F8F75 /* Main.storyboard */; };
 		3F716F6A1E097F04004F8F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F716F691E097F04004F8F75 /* Assets.xcassets */; };
 		3F716F6D1E097F04004F8F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F716F6B1E097F04004F8F75 /* LaunchScreen.storyboard */; };
+		3F8D16A91E2D0FFF007A4B9D /* most_annoying_sound_ever-Ethan_Buck-1557665457.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D16A81E2D0FFF007A4B9D /* most_annoying_sound_ever-Ethan_Buck-1557665457.wav */; };
+		3F8D16AB1E2D1035007A4B9D /* censor-beep-10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D16AA1E2D1035007A4B9D /* censor-beep-10.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F716F691E097F04004F8F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F716F6C1E097F04004F8F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F716F6E1E097F04004F8F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F8D16A81E2D0FFF007A4B9D /* most_annoying_sound_ever-Ethan_Buck-1557665457.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "most_annoying_sound_ever-Ethan_Buck-1557665457.wav"; sourceTree = "<group>"; };
+		3F8D16AA1E2D1035007A4B9D /* censor-beep-10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "censor-beep-10.mp3"; path = "SoundBoard/Assets.xcassets/censor-beep-10.dataset/censor-beep-10.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		3F716F501E097F03004F8F75 = {
 			isa = PBXGroup;
 			children = (
+				3F8D16A71E2D0EFD007A4B9D /* Sounds */,
 				3F716F5B1E097F03004F8F75 /* SoundBoard */,
 				3F716F5A1E097F03004F8F75 /* Products */,
 			);
@@ -65,6 +70,15 @@
 				3F716F6E1E097F04004F8F75 /* Info.plist */,
 			);
 			path = SoundBoard;
+			sourceTree = "<group>";
+		};
+		3F8D16A71E2D0EFD007A4B9D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3F8D16AA1E2D1035007A4B9D /* censor-beep-10.mp3 */,
+				3F8D16A81E2D0FFF007A4B9D /* most_annoying_sound_ever-Ethan_Buck-1557665457.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F716F681E097F04004F8F75 /* Main.storyboard in Resources */,
+				3F8D16A91E2D0FFF007A4B9D /* most_annoying_sound_ever-Ethan_Buck-1557665457.wav in Resources */,
 				3F716F6A1E097F04004F8F75 /* Assets.xcassets in Resources */,
 				3F716F6D1E097F04004F8F75 /* LaunchScreen.storyboard in Resources */,
+				3F8D16AB1E2D1035007A4B9D /* censor-beep-10.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +317,7 @@
 				3F716F731E097F04004F8F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
